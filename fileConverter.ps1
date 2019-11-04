@@ -1,4 +1,4 @@
-forEach ($file in get-childItem "0-9" -Attributes !Directory -Recurse) {
+forEach ($file in get-childItem "test" -Attributes !Directory -Recurse) {
 $le = split-path -Path $file -LeafBase
 $dir = split-path -Path $file
 $newName = $le + ".pdf"
